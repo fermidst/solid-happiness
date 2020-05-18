@@ -18,13 +18,13 @@ namespace SolidHappiness.Controllers
         }
 
         [HttpGet]
-        public async Task<GetProductsResponseDto> GetProducts(GetProductsRequestDto request)
+        public async Task<GetProductsResponseDto> GetProducts([FromRoute] GetProductsRequestDto request)
         {
             return await _mediator.Send(request);
         }
 
-        [HttpPost]
-        public async Task<GetProductResponseDto> GetProduct(GetProductRequestDto request)
+        [HttpGet("{id}")]
+        public async Task<GetProductResponseDto> GetProduct([FromRoute] GetProductRequestDto request)
         {
             return await _mediator.Send(request);
         }

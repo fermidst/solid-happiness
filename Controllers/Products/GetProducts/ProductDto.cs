@@ -4,7 +4,7 @@ namespace SolidHappiness.Controllers.Products.GetProducts
 {
     public class ProductDto
     {
-        public Guid PublicId { get; set; }
+        public string Id { get; set; }
 
         public string Name { get; set; }
 
