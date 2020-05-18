@@ -1,6 +1,6 @@
 ﻿namespace SolidHappiness.Configs
 {
-    public class FirebaseConfig
+    public class FirestoreConfig
     {
         public string ProjectId { get; set; }
     }

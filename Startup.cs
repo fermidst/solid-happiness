@@ -21,7 +21,7 @@ namespace SolidHappiness
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(Startup));
-            services.Configure<FirebaseConfig>(Configuration.GetSection("Firestore"));
+            services.Configure<FirestoreConfig>(Configuration.GetSection("Firestore"));
             services.AddControllers();
         }
 
