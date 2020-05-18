@@ -13,7 +13,5 @@ namespace SolidHappiness.Controllers.Products.GetProducts
         public string Image { get; set; }
 
         public string Description { get; set; }
-
-        public Guid CategoryPublicId { get; set; }
     }
 }

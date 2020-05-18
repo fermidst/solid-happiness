@@ -22,7 +22,6 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Price = 100,
                         Image = string.Empty,
                         Name = "name1",
-                        CategoryPublicId = Guid.NewGuid()
                     },
                     new ProductDto
                     {
@@ -31,7 +30,6 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Price = 200,
                         Image = string.Empty,
                         Name = "name12",
-                        CategoryPublicId = Guid.NewGuid()
                     },
                     new ProductDto
                     {
@@ -40,7 +38,6 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Price = 300,
                         Image = string.Empty,
                         Name = "name123",
-                        CategoryPublicId = Guid.NewGuid()
                     }
                 }
             };

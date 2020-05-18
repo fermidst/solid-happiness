@@ -14,7 +14,6 @@ namespace SolidHappiness.Controllers.Products.GetProduct
             {
                 Name = "name1",
                 Description = "desc1",
-                CategoryPublicId = Guid.NewGuid(),
                 Image = "image1",
                 Price = 111,
                 PublicId = Guid.NewGuid()
