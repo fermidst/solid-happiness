@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using SolidHappiness.Controllers.Products.GetProduct;
 using SolidHappiness.Controllers.Products.GetProducts;
 
 namespace SolidHappiness.Controllers
@@ -18,6 +19,12 @@ namespace SolidHappiness.Controllers
 
         [HttpGet]
         public async Task<GetProductsResponseDto> GetProducts(GetProductsRequestDto request)
+        {
+            return await _mediator.Send(request);
+        }
+
+        [HttpPost]
+        public async Task<GetProductResponseDto> GetProduct(GetProductRequestDto request)
         {
             return await _mediator.Send(request);
         }
