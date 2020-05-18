@@ -2,6 +2,6 @@
 {
     public class FirestoreConfig
     {
-        public string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
     }
 }

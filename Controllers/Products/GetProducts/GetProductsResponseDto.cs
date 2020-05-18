@@ -4,6 +4,6 @@ namespace SolidHappiness.Controllers.Products.GetProducts
 {
     public class GetProductsResponseDto
     {
-        public ICollection<ProductDto> Products { get; set; }
+        public ICollection<ProductDto>? Products { get; set; }
     }
 }
