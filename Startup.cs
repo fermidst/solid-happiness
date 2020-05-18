@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SolidHappiness.Configs;
 
 namespace SolidHappiness
 {
@@ -20,6 +21,7 @@ namespace SolidHappiness
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(Startup));
+            services.Configure<FirebaseConfig>(Configuration.GetSection("Firestore"));
             services.AddControllers();
         }
 
@@ -28,7 +30,7 @@ namespace SolidHappiness
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
