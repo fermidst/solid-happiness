@@ -21,7 +21,7 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Description = "desc1",
                         Price = 100,
                         Image = string.Empty,
-                        Name = "name1",
+                        Name = "name1"
                     },
                     new ProductDto
                     {
@@ -29,7 +29,7 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Description = "desc123",
                         Price = 200,
                         Image = string.Empty,
-                        Name = "name12",
+                        Name = "name12"
                     },
                     new ProductDto
                     {
@@ -37,7 +37,7 @@ namespace SolidHappiness.Controllers.Products.GetProducts
                         Description = "desc123",
                         Price = 300,
                         Image = string.Empty,
-                        Name = "name123",
+                        Name = "name123"
                     }
                 }
             };
